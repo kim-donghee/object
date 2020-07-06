@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 
 import com.example.demo.chap06_메시지와인터페이스_티켓.일정관리.Event;
 import com.example.demo.chap06_메시지와인터페이스_티켓.일정관리.RecurringSchedule;
+import com.example.demo.chap14_일관성있는협력.핸드폰요금.step01.DurationDiscountPolicy;
 
 @SpringBootApplication
 public class ObjectApplication {
@@ -32,8 +33,8 @@ public class ObjectApplication {
 				RecurringSchedule schedule = new RecurringSchedule("회의", DayOfWeek.FRIDAY, 
 						LocalTime.of(7, 30), Duration.ofHours(30));
 				
-				System.out.println(event.isSatisfied(schedule));
-				System.out.println(event.isSatisfied(schedule));
+//				System.out.println(event.isSatisfied(schedule));
+//				System.out.println(event.isSatisfied(schedule));
 				
 			}
 		};
